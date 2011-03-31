@@ -5,6 +5,9 @@ build/*
 *.mode*
 *.perspectivev*
 
+*.xcodeproj/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+
 # osx noise
 .DS_Store
 profile

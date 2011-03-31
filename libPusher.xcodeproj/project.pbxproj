@@ -10,6 +10,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		8CD9BDA813449B8B006112C2 /* PTTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD9BDA613449B8B006112C2 /* PTTransaction.h */; };
+		8CD9BDA913449B8B006112C2 /* PTTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9BDA713449B8B006112C2 /* PTTransaction.m */; };
 		A3A1A112115814D0001EF877 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A1A111115814D0001EF877 /* OCHamcrest.framework */; };
 		A3A1A149115814F7001EF877 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3A1A111115814D0001EF877 /* OCHamcrest.framework */; };
 		A3A1A15C1158158D001EF877 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A1A15B1158158D001EF877 /* OCMock.framework */; };
@@ -106,6 +108,8 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* libPusher_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libPusher_Prefix.pch; sourceTree = "<group>"; };
 		58E48FD512DF4F1A00046E63 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8CD9BDA613449B8B006112C2 /* PTTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTransaction.h; sourceTree = "<group>"; };
+		8CD9BDA713449B8B006112C2 /* PTTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTransaction.m; sourceTree = "<group>"; };
 		A3A19FB911580DD7001EF877 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		A3A19FBF11580DE9001EF877 /* UnitTests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTests_Prefix.pch; sourceTree = "<group>"; };
 		A3A1A0EB115813E2001EF877 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +218,8 @@
 				A3FE42181181173B009CF5D7 /* PTPusherChannel.h */,
 				A3FE42191181173B009CF5D7 /* PTPusherChannel.m */,
 				A3FE44881181B8EE009CF5D7 /* PTPusherChannelDelegate.h */,
+				8CD9BDA613449B8B006112C2 /* PTTransaction.h */,
+				8CD9BDA713449B8B006112C2 /* PTTransaction.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				A3FE44891181B8EE009CF5D7 /* PTPusherChannelDelegate.h in Headers */,
 				A3CDE3BD11C93E580051777E /* ZTLog.h in Headers */,
 				A3CDE3BE11C93E580051777E /* ZTWebSocket.h in Headers */,
+				8CD9BDA813449B8B006112C2 /* PTTransaction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +583,7 @@
 				A3FE429F11811EEE009CF5D7 /* NSString+Hashing.m in Sources */,
 				A3FE44761181B7FE009CF5D7 /* PTPusherChannel.m in Sources */,
 				A3CDE3BA11C93E4E0051777E /* ZTWebSocket.m in Sources */,
+				8CD9BDA913449B8B006112C2 /* PTTransaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
