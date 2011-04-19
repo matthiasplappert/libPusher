@@ -62,6 +62,8 @@ extern NSString *const PTPusherEventReceivedNotification;
 + (NSString *)appID;
 + (void)setAppID:(NSString *)appId;
 
+- (void)connect;
+
 @end
 
 @protocol PTPusherChannelProtocol

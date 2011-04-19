@@ -19,7 +19,6 @@ NSString *const PTPusherEventReceivedNotification = @"PTPusherEventReceivedNotif
 @interface PTPusher ()
 - (NSString *)URLString;
 - (void)handleEvent:(PTPusherEvent *)event;
-- (void)connect;
 
 - (void)sendToSocket:(NSString *)message;
 - (void)sendEvent:(NSString *)eventName data:(NSDictionary *)dataLoad;
