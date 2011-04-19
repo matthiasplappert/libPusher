@@ -260,19 +260,22 @@ NSString *const PTPusherEventReceivedNotification = @"PTPusherEventReceivedNotif
 	if ([delegate respondsToSelector:@selector(pusherDidFailToConnect:withError:)]) {
 		[delegate pusherDidFailToConnect:self withError:error];
 	}
+    
+    // Make sure to properly disconnect
+    [webSocket close];
+    
+    // Move channels to subscribe queue
+    for (NSString *key in channels) {
+        PTPusherChannel *channel = [channels objectForKey:key];
+        [subscribeQueue addObject:channel];
+    }
+    [channels removeAllObjects];
 	
 	if (self.reconnect) {
 		if ([delegate respondsToSelector:@selector(pusherWillReconnect:afterDelay:)]) {
 			[delegate pusherWillReconnect:self afterDelay:kPTPusherReconnectDelay];
 		}
 		[self performSelector:@selector(connect) withObject:nil afterDelay:kPTPusherReconnectDelay];
-		
-		// Move channels to subscribe queue
-		for (NSString *key in channels) {
-			PTPusherChannel *channel = [channels objectForKey:key];
-			[subscribeQueue addObject:channel];
-		}
-		[channels removeAllObjects];
 	}
 }
 
