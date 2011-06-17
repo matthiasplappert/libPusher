@@ -23,6 +23,9 @@
 #define kMemberAddedPresenceKey @"pusher_internal:member_added"
 #define kMemberRemovedPresenceKey @"pusher_internal:member_removed"
 
+NSString *generateEncodedHMAC(NSString *string, NSString *secret);
+NSString *URLEncodedString(NSString *unencodedString);
+
 NSString *generateEncodedHMAC(NSString *string, NSString *secret) {
 	const char *cKey  = [secret cStringUsingEncoding:NSASCIIStringEncoding];
 	const char *cData = [string cStringUsingEncoding:NSASCIIStringEncoding];
